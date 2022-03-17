@@ -8,6 +8,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("tiny"));
 
+console.log(process.env);
+
 app.get("/", (req, res) => {
   res.send(`hello world`);
 });
