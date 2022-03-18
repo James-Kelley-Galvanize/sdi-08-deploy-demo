@@ -1,5 +1,7 @@
 const db = require("./dbConnection");
 
-function getAllRecords() {}
+function getAllPets() {
+  return db("pets").select("*");
+}
 
-module.exports = { getAllRecords };
+module.exports = { getAllPets };
