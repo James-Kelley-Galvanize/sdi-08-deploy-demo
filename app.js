@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send(`hello world`);
 });
 app.get("/pets", (req, res) => {
-  getAllPets().then((data) => res.json(data.rows));
+  getAllPets().then((data) => res.send(data));
 });
 
 module.exports = app;
